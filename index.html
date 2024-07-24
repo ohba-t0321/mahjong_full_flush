@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清一色の待ちを当てるアプリ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .tiles {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .tile {
+            margin: 5px;
+            width: 40px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>清一色の待ちを当てるアプリ</h1>
+    <p>手牌を入力してください（例: 12345678911234m）:</p>
+    <input type="text" id="hand" placeholder="例: 12345678911234m">
+    <button onclick="findWaitingTiles()">待ちを表示</button>
+    <button onclick="generateRandomHand()">ランダム手牌生成</button>
+    <p id="result"></p>
+    <div id="tiles" class="tiles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
