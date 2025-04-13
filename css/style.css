@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+input {
+    margin: 10px;
+    padding: 5px;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.tiles {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.tiles img {
+    max-width: calc(95dvw/13);
+    height: auto;
+  }
+.tile {
+    margin: 0;
+    padding: 0;
+}
+
+#hand {
+    width: 90%;
+}
